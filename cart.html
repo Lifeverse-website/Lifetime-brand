@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart | Lifetime Official Store</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-wrap">
+      <a href="index.html" class="logo-text">LIFETIME</a>
+      <span class="tagline">Style • Culture • Identity</span>
+    </div>
 
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html" class="active">Cart <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="section-head">
+      <h1>Your Cart</h1>
+      <p>Review your selected Lifetime items.</p>
+    </div>
+
+    <div id="cart-items" class="cart-list"></div>
+
+    <div class="cart-summary">
+      <h2>Order Summary</h2>
+      <p><strong>Total (USD):</strong> <span id="cart-total-usd">$0</span></p>
+      <p><strong>Total (NGN):</strong> <span id="cart-total-ngn">₦0</span></p>
+      <div class="cart-actions">
+        <button class="btn btn-danger" onclick="clearCart()">Clear Cart</button>
+        <a class="btn btn-light" href="checkout.html">Proceed to Checkout</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Lifetime Official Store</p>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
