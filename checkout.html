@@ -1,1 +1,75 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | Lifetime Official Store</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-wrap">
+      <a href="index.html" class="logo-text">LIFETIME</a>
+      <span class="tagline">Style • Culture • Identity</span>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="section-head">
+      <h1>Checkout</h1>
+      <p>This is a starter checkout page. Payment integration can be added later.</p>
+    </div>
+
+    <div class="checkout-grid">
+      <form class="checkout-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input id="name" type="text" placeholder="Enter your full name" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input id="email" type="email" placeholder="Enter your email" />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input id="phone" type="text" placeholder="Enter your phone number" />
+        </div>
+
+        <div class="form-group">
+          <label for="address">Delivery Address</label>
+          <textarea id="address" rows="5" placeholder="Enter delivery address"></textarea>
+        </div>
+
+        <button type="button" class="btn btn-light" onclick="submitOrder()">
+          Place Order
+        </button>
+      </form>
+
+      <div class="checkout-summary">
+        <h2>Checkout Note</h2>
+        <p>
+          This starter store does not process live payments yet. The order button currently confirms submission locally.
+        </p>
+        <p>
+          Next upgrade can connect Paystack or Stripe and save orders in a backend.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Lifetime Official Store</p>
+  </footer>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>
